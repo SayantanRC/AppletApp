@@ -1,4 +1,4 @@
-# AppletApp - A simple applet to see time of different timezones  
+# AppletApp - A simple applet to see time from different timezones  
 
 ## How to run  
 1. Download or clone this repository  
