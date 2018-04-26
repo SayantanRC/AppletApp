@@ -1,5 +1,4 @@
-# AppletApp  
-# A simple applet to see time of different timezones  
+# AppletApp - A simple applet to see time of different timezones  
 
 ## How to run  
 1. Download or clone this repository  
@@ -11,3 +10,9 @@ java -version
 ```
 sudo apt install default-java
 ```
+4. Check if JAVA_HOME is set.
+```
+echo $JAVA_HOME
+```
+Should give an output:  
+> /usr/lib/jvm/default-java
