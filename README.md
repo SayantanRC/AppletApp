@@ -10,9 +10,3 @@ java -version
 ```
 sudo apt install default-java
 ```
-4. Check if JAVA_HOME is set.
-```
-echo $JAVA_HOME
-```
-Should give an output:  
-> /usr/lib/jvm/default-java
