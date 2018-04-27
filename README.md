@@ -1,8 +1,9 @@
 # AppletApp - A simple applet to see time from different timezones  
 
 ## How to run  
-1. Download or clone this repository  
+1. Download or clone this repository (in /home)  
 ```
+cd ~
 git clone https://github.com/SayantanRC/AppletApp.git
 ```
 2. Check if Java is installed  

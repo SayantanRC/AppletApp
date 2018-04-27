@@ -1,7 +1,7 @@
 
 import java.applet.Applet ;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
@@ -10,9 +10,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
-import java.util.Vector;
+import javax.swing.BoxLayout;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /*
@@ -25,6 +26,7 @@ public class AppletApp extends Applet {
     JComboBox<String> zones;            // drop down box for showing different zones
     JTextField displayTimeTextField;    // text field to show the time
     JTextField gmtMention;              // another text field
+    JPanel panel;                       // panel to add all components
     
     /*
     Double dimension array is used to store timezones
@@ -116,11 +118,17 @@ public class AppletApp extends Applet {
         gmtMention.setHorizontalAlignment(JTextField.CENTER);
         gmtMention.setPreferredSize(new Dimension(400, 50));
         
-        // setting layout and adding all components to applet
-        setLayout(new FlowLayout(FlowLayout.CENTER));
-        add(zones);
-        add(displayTimeTextField);
-        add(gmtMention);
+        // creating panel and adding components
+        panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setSize(new Dimension(400, 215));
+        panel.add(zones);
+        panel.add(displayTimeTextField);
+        panel.add(gmtMention);
+        
+        // setting layout and adding panel
+        setLayout(new GridBagLayout());
+        add(panel);
     }
     
     /*
