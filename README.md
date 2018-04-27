@@ -16,8 +16,9 @@ sudo apt install default-java
 ```
 4. Compile and run the applet
 ```
-javac ~/AppletApp/AppletApp.java
-appletviewer ~/AppletApp/AppletApp.java
+cd ~/AppletApp
+javac AppletApp.java
+appletviewer AppletApp.java
 ```
 
 ## To add timezones
