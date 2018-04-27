@@ -14,11 +14,10 @@ java -version
 ```
 sudo apt install default-java
 ```
-4. Enter into cloned directory and run the applet
+4. Compile and run the applet
 ```
-cd AppletApp
-javac AppletApp.java
-appletviewer AppletApp.java
+javac ~/AppletApp/AppletApp.java
+appletviewer ~/AppletApp/AppletApp.java
 ```
 
 ## To add timezones
