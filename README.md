@@ -12,7 +12,7 @@ java -version
 ```
 3. If not installed, install using:
 ```
-sudo apt install default-java
+sudo apt update && sudo apt install default-jdk
 ```
 4. Compile and run the applet
 ```
