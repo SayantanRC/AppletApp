@@ -14,6 +14,9 @@ java -version
 ```
 sudo apt update && sudo apt install default-jdk
 ```
+<b>Optional:</b> JVMs are located under `/usr/lib/jvm`. You can add a line under `/etc/environment` file:
+> JAVA_HOME="/usr/lib/jvm/default-java"
+
 4. Compile and run the applet
 ```
 cd ~/AppletApp
